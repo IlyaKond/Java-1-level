@@ -1,12 +1,14 @@
 package Lesson3.HomeWork3;
 
+import java.util.Arrays;
+
 public class HomeWork3 {
     public static void main(String[] args) {
         array0to1();
         array100();
-        arrayMultiplication2();
+        System.out.println(Arrays.toString(arrayMultiplication2()));
         arrayDiagonal(4,4);
-        method5(4,5);
+        System.out.print(Arrays.toString(method5(4,5)));
     }
 
     public static void array0to1() {
@@ -32,17 +34,14 @@ public class HomeWork3 {
         System.out.println();
         System.out.println();
     }
-    public static void arrayMultiplication2(){
+    public static int[] arrayMultiplication2(){
         int[] array3= {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
         for (int i = 0; i < array3.length; i++) {
-            if(array3[i]<6){
+            if(array3[i]<6) {
                 array3[i] *= 2;
             }
-            System.out.print(array3[i]+" ");
         }
-        System.out.println();
-        System.out.println();
-
+        return array3;
     }
     public static void arrayDiagonal(int size1,int size2) {
         int[][] array4 = new int[size1][size2];
@@ -63,13 +62,13 @@ public class HomeWork3 {
 
 
 
-    public static void method5(int length,int initialValue){
+    public static int[] method5(int length,int initialValue){
        int [] array5 =new int[length];
         for (int i = 0; i < array5.length; i++) {
             array5[i] = initialValue;
-            System.out.print( array5[i]+" ");
-        }
 
+        }
+            return array5;
     }
 
 }
