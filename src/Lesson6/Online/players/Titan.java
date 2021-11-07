@@ -1,4 +1,4 @@
-package Lection06.online.players;
+package Lesson6.Online.players;
 
 /**
  * Created by Aleksandr Gladkov [Anticisco]

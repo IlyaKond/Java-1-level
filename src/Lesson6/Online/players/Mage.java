@@ -1,6 +1,6 @@
-package Lection06.online.players;
+package Lesson6.Online.players;
 
-import Lection06.online.models.Hero;
+import Lesson6.Online.models.Hero;
 
 /**
  * Created by Aleksandr Gladkov [Anticisco]

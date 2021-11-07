@@ -1,10 +1,10 @@
-package Lection06.online;
+package Lesson6.Online;
 
-import Lection06.online.models.Hero;
-import Lection06.online.players.Archer;
-import Lection06.online.players.Mage;
-import Lection06.online.players.Titan;
-import Lection06.online.players.Warrior;
+import Lesson6.Online.models.Hero;
+import Lesson6.Online.players.Archer;
+import Lesson6.Online.players.Mage;
+import Lesson6.Online.players.Titan;
+import Lesson6.Online.players.Warrior;
 
 /**
  * Created by Aleksandr Gladkov [Anticisco]
