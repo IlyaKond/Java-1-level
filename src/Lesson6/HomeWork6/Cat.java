@@ -1,24 +1,17 @@
 package Lesson6.HomeWork6;
 
 public class Cat extends Animal{
-    String voiceCat;
-    public Cat(String nameAnimal,int distance,String voiceCat){
-        super(nameAnimal,distance);
-        this.voiceCat=voiceCat;
-    }
-    @Override
-    public void swimAnimal(){
+    public static int countCat = 0;
+    public static String typeThisClass = "Кот";
 
-            System.out.println(nameAnimal+" не умеет плавать!");
-
+    Cat(String name, float maxRun, float maxSwim) {
+        super(typeThisClass, name, maxRun, maxSwim);
+        ++countCat;
     }
+
     @Override
-            public void runAnimal(){
-        if (distance<=200)
-            System.out.println(nameAnimal + " пробежал " + distance + " м");
-        else {
-            System.out.println("Для кота "+nameAnimal+" слишком большая дистанция");
-        }
+    protected int swim(float distance) {
+        return Animal.SWIM_NONE;
     }
 
 }
